@@ -1,0 +1,99 @@
+.visuals{
+	background-color: $--primary;
+	color: $--main-white;
+	&__title{
+		max-width: 500px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+		@media screen and (min-width:768px) {
+			margin-bottom: 50px;
+		}
+	}
+	&__items{
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		@media screen and (min-width:768px) {
+			gap: 50px;
+		}
+	}
+	&__item{
+		display: flex;
+		flex-direction: column-reverse;
+		gap: 32px;
+		border-radius: 20px;
+		padding: 10px 10px 24px 10px;
+		background-color: $--dark-grey;
+		
+		@media screen and (min-width:768px) {
+			gap: 64px;
+			border-radius: 24px;
+			
+		}
+		@media screen and (min-width:1240px) {
+			flex-direction: row;
+			padding: 24px 24px 24px 64px;
+			align-items: center;
+		}
+		@media screen and (min-width:768px) and (max-width:1239.9px) {
+			padding: 24px 24px 48px 24px;
+		}
+		&__img{
+			max-width: 100%;
+			max-height: 100%;
+			border-radius: 18px;
+			object-fit: cover;
+			aspect-ratio: 1;
+			@media screen and (min-width:1240px) {
+				width: 49%;
+				aspect-ratio: 11 / 12;
+			}
+		@media screen and (min-width:768px) and (max-width:1239.9px) {
+			max-height: 649px;
+			height: 100%;
+			width: 100%;
+			aspect-ratio: none;
+		}
+		}
+		&__info{
+			@media screen and (min-width:1240px) {
+				width: 45%;
+			}
+			@media screen and (min-width:768px) {
+			gap: 50px;
+			}
+			display: flex;
+			flex-direction: column;
+			gap: 24px;
+
+			h3{
+				@include titleH3;
+			}
+			&-data{
+				display: flex;
+				flex-direction: column;
+				gap: 24px;
+				&-name{
+					display: flex;
+					flex-direction: column;
+					gap: 6px;
+					div{
+						font-size: 20px;
+						font-style: normal;
+						font-weight: 600;
+						line-height: 120%; /* 24px */
+						letter-spacing: 0.2px;
+						color: $--secondary;
+						padding-bottom: 6px;
+						border-bottom: 1px solid rgba(241, 240, 237, 0.5);;
+					}
+					span{
+						@include p3;
+						color: $--light-grey;
+					}
+				}
+			}
+		}
+
+	}
+}

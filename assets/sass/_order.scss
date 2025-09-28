@@ -1,0 +1,105 @@
+.order{
+	border-radius: 32px;
+	position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url(../images/order-bg.jpg) no-repeat 0 -75.5px / 100% 135.508%;
+    filter: grayscale(1);
+    z-index: -1; 
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+      linear-gradient(0deg, rgba(241, 240, 237, 0) 93.97%, #F1F0ED 100%),
+      linear-gradient(180deg, rgba(241, 240, 237, 0) 94.48%, #F1F0ED 100%),
+      linear-gradient(0deg, rgba(241, 240, 237, 0.8) 0%, rgba(241, 240, 237, 0.8) 100%);
+    z-index: 0; 
+  }
+	&__title{
+		position: relative;
+		z-index: 1;
+		color: $--primary;
+		margin-bottom: 30px;
+		@media screen and (min-width:768px) {
+			margin-bottom: 50px;
+		}
+	}
+	&__content{
+		position: relative;
+		z-index: 1;
+		background-color: $--primary;
+		border-radius: 20px;
+		padding: 48px 24px;
+		@media screen and (min-width:768px) {
+			border-radius: 24px;
+			padding: 64px;
+		}		
+	}
+	&__steps{
+		display: flex;
+		flex-direction: column;
+		gap: 48px;
+		padding-bottom: 48px;
+		margin-bottom: 48px;
+		border-bottom: 1px solid transparent;
+		border-image:linear-gradient(90deg, rgba(153, 153, 153, 0.00) 0%, #F1F0ED 59.13%, rgba(153, 153, 153, 0.00) 100%);
+		border-image-slice: 1;
+		@media screen and (min-width:768px) {
+			display: grid;			
+			padding-bottom: 35px;
+		margin-bottom: 35px;
+		}
+		@media screen and (min-width:1024px) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+		@media screen and (min-width:768px) and (max-width:1023.9px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		&-item{
+			display: flex;
+			flex-direction: column;
+			gap: 13px;
+			&-top{
+				display: flex;
+				gap: 18px;
+				align-items: center;
+				div{
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					max-width: 60px;
+					max-height: 60px;
+					padding: 12px;
+					background-color: $--main-white;
+					border-radius: 10px;
+					img{
+						min-width:40px;
+						min-height: 40px;
+						max-width: 40px;
+						max-height: 40px;
+					}
+				}
+				span{
+					font-size: 25px;
+					font-style: normal;
+					font-weight: 600;
+					line-height: 120%; /* 30px */
+					letter-spacing: -0.25px;
+					color: $--main-white
+				}
+			}
+			p{
+				@include p2;
+				color: $--main-white;
+			}
+		}
+	}
+	.btn{
+		margin: 0 auto;
+	}
+}

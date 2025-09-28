@@ -1,0 +1,126 @@
+@mixin titleH1{
+font-family: 'Titillium Web', sans-serif;
+font-size: 34px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; 
+text-transform: uppercase;
+	@media screen and (min-width:768px){
+		font-size: 50px;
+	}
+
+	strong{		
+		font-weight: 700;
+	}
+}
+@mixin titleH2{
+font-family: 'Titillium Web', sans-serif;
+font-size: 29px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 34.8px */
+letter-spacing: 0.29px;
+@media screen and (min-width:768px){
+	font-size: 40px;
+letter-spacing: 0.4px;
+}
+
+strong{
+	letter-spacing: inherit;
+	font: inherit;
+	line-height:inherit;
+	font-weight: 700;
+}
+}
+
+@mixin titleH3{
+font-family:'Titillium Web', sans-serif;
+font-size: 26px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%;
+letter-spacing: -0.26px;
+@media screen and (min-width:768px){
+font-size: 28px;
+letter-spacing: 0.28px;
+}
+} 
+@mixin titleH4{
+font-family:'Titillium Web', sans-serif;
+	font-size: 23px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 120%; /* 30px */
+	letter-spacing: -0.25px;
+	@media screen and (min-width:768px){
+		font-size: 25px;
+	}
+}
+@mixin titleH5{
+	font-family:'Titillium Web', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 120%; /* 24px */
+	letter-spacing: -0.2px;
+	@media screen  {
+		font-size: 22px;
+		letter-spacing: -0.22px;
+	}
+}
+@mixin headerLinks{
+font-size: 28px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%;
+letter-spacing: 0.28px;
+color: $--main-white;
+@media screen and (min-width:1024px) {
+	font-size: 16px;
+	letter-spacing: 0.16px;
+}
+}
+@mixin p1{
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 24px */
+letter-spacing: 0.32px;
+@media screen and (min-width:768px) {
+font-size: 18px;
+letter-spacing: 0.36px;
+}
+}
+@mixin p2{
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%;
+}
+@mixin p2-1{
+	font-size: 14px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 160%;
+	@media screen and (min-width:768px) {
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 140%;
+	}
+	
+}
+@mixin p3{
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%; /* 21px */
+	letter-spacing: 0.28px;
+}
+@mixin p3-1{
+	font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 160%; /* 22.4px */
+letter-spacing: 0.28px;
+}

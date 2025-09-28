@@ -1,0 +1,484 @@
+@property --hue {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 180deg;
+}
+.contacts{
+	margin-bottom: 120px;
+	&__title{
+		margin-bottom: 32px;
+		max-width: 100%;
+		width: 100%;
+		@media screen and (min-width:1024px)  {
+			margin-bottom: 40px;
+			max-width: 73%;
+			margin-bottom: 0;
+		}
+		@media screen and (min-width:1024px)  {
+			
+			max-width: 73%;
+		}
+		@media screen and (min-width:1024px) and (max-width:1239.9px) {
+			margin-bottom: 40px;
+		}
+		@media screen and (min-width:1240px) {
+			margin-bottom: 0;
+		}
+
+		h2{
+			text-align: left;
+					@media screen and (min-width:768px) and (max-width:1023.9px) {
+						padding-right: 221px;
+					}
+					@media screen and (max-width:767.9px) {
+						padding-right: 142px;
+					}
+					@media screen and (min-width:430px) and (max-width:576px) {
+						padding-right: 0;
+					}
+			strong{
+				color: $--accent-color;
+			}
+		}
+
+	}
+	&__wrap{
+		display: flex;
+		gap: 32px;
+		flex-direction: row;
+			flex-wrap: wrap;
+			position: relative;
+			@media screen and (min-width:1240px) {
+				margin-top: -48px;
+				column-gap: 32px;
+				row-gap: 0;
+			}
+		&__img{
+			max-height: 488px;
+			
+			img{
+				width: 100%;
+				height: 100%;
+				margin: 0 auto;
+				object-fit: cover;
+			}
+			@media screen and (min-width:1240px) {
+				width: 41.5%;
+				margin-bottom: 58px;
+				margin-top: 57px;
+			}
+			@media screen and (max-width:1239.9px) {
+				position: absolute;
+				top: -205px;
+				z-index: 2;
+				right: 0;
+				max-width:271px;
+				max-height: 221px;
+				width: 100%;
+				height: 100%;
+			}
+			@media screen and (max-width:767.9px) {
+				max-width:142px;
+				max-height: 115px;
+				top: -102px;
+			}
+	}
+	}
+	&__socials{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 20px;
+		width: 100%;
+		@media screen and (min-width:1240px) {
+			width: 41%;
+			margin-top: -52px;
+		}
+		@media screen and (min-width:768px) and (max-width:1239.9px) {
+			flex-direction: column;
+			text-align: center;
+		}
+		@media screen  and (max-width:429.9px) {
+			flex-direction: column;
+			text-align: center;
+		}
+		&__mail{
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			@media screen and (min-width:768px) and (max-width:1239.9px) {
+			align-items: center;
+		}
+			div{
+			color: $--white;
+			font-family: 'NauryzRedKeds';
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			letter-spacing: 1.4px;
+			text-transform: uppercase;
+			@media screen and (min-width:768px) {
+				font-size: 20px;
+				letter-spacing: 2px;
+			}
+		
+			}
+				a{
+				text-align: center;
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				letter-spacing: 1.2px;
+				text-transform: uppercase;
+					color: $--light-grey;
+				transition: .3s linear;
+				@media screen and (min-width:768px) {
+					font-size: 16px;
+				}
+				&:hover{
+					color: $--accent-color;
+				}
+			}
+		}
+		&__wrap{
+			display: flex;
+			align-items: center;
+			gap: 30px;
+			width: fit-content;
+			a{
+				max-width: 36px;
+				max-height: 36px;
+				min-width: 36px;
+				min-height: 36px;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				transition: .3s ease-in-out;
+				&:hover{
+					transform: scale(1.1);
+				}
+				@media screen and (min-width:768px) {
+					max-width: 48px;
+				max-height: 48px;
+				min-width: 48px;
+				min-height: 48px;
+				}
+			}
+			svg{
+				max-width: 22px;
+				max-height: 22px;
+				width: 100%;
+				height: 100%;
+				@media screen and (min-width:768px) {
+					max-width: 27px;
+				max-height: 27px;
+				}
+			}
+		}
+	}
+	
+	&__form{
+		padding: 42px 22px 0 22px;
+		background-color: $--secondary;
+		border-radius: 40px;
+		position: relative;
+		width: 100%;
+		@media screen and (min-width:768px) {
+			border-radius: 80px;
+		}
+		@media screen and (min-width:1024px) {
+			padding: 48px 48px 0 48px;
+		}
+		@media screen and (max-width:429.9px) {
+			border-radius: 40px 40px 20px 20px;
+		}
+		&__title{
+			color: $--white;
+			font-family: 'NauryzRedKeds';
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 300;
+			line-height: 140%;
+			letter-spacing: 1.4px;
+			text-transform: uppercase;
+			margin-bottom: 2px;
+			@media screen and (min-width:768px) {
+				font-size: 20px;
+				letter-spacing: 2px;
+				margin-bottom: 20px;
+			}
+			strong{
+				color: $--accent-color;
+			}
+		}
+		@media screen and (min-width:1240px) {
+			width: 55.75%;
+		}
+		form{
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			position: relative;			
+			div{
+				width: 100%;
+			}
+			input,
+			select{
+				border-radius: 100px;
+				border: 1px solid #FFF;
+				padding: 21.5px 32px;
+				background-color: transparent;
+				outline: none;
+				width: 100%;
+				color: $--light-grey;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				letter-spacing: 1.4px;
+				text-transform: uppercase;
+				@media screen and (min-width:768px) {
+					padding: 30px 50px;
+					font-size: 16px;
+					letter-spacing: 1.6px;
+				}			
+			}
+			select{
+				appearance: none;
+				padding-right: 77.5px;
+				position: relative;
+				@media screen and (min-width:768px) {
+					padding: 22px 50px;
+				}	
+				&::-ms-expand { display: none; } 
+			@supports (appearance: base-select) {
+					&,
+					&::picker(select) {
+						appearance: base-select;
+						animation: rotateHue 10s infinite;
+						animation-play-state: paused;
+					}
+					&:open {
+						animation-play-state: running;
+						@media (prefers-reduced-motion) {
+							animation-play-state: paused;
+						}
+					}
+				}
+				@supports (appearance: base-select) {
+    // padding-inline: 20px;
+    background-image: none;
+    img {
+      width: 30px;
+      line-height: 1;
+    }
+    &::picker-icon {
+      content: "";
+      width: 17.5px;
+			height: 8.5px;
+			position: absolute;
+			right: 30px;
+			top: 50%;
+			translate: -50%;
+			background: url('../images/arrow-select.svg') center center / cover no-repeat;
+      transition: rotate 0.2s ease-out;
+			@media screen and (min-width:768px) {
+				right: 50px;
+			}
+    }
+    &:open::picker-icon {
+      rotate: 180deg;
+    }
+    &::picker(select) {
+      padding: 0;
+      margin-top: 5px;
+			border: 1px solid $--accent-color;
+      background:$--secondary;
+      border-radius: 20px;
+      font-weight: 400;
+			color: $--white;
+      opacity: 0;
+      height: 0;
+      overflow: clip;
+      transition: height 0.5s ease-out, opacity 0.5s ease-out, overlay 0.5s,
+        display 0.5s;
+      transition-behavior: allow-discrete;
+    }
+    &:open::picker(select) {
+      opacity: 1;
+      height: calc-size(auto, size);
+      overflow: auto;
+      @starting-style {
+        opacity: 0;
+        height: 0;
+      }
+    }
+	}
+				& option{
+						 display: flex;
+      align-items: center;
+      padding: 10px;
+      gap: 10px;
+      cursor: pointer;
+      transition-property: color, background;
+      transition-duration: 0.2s;
+      transition-timing-function: ease-out;
+      &:where(:hover, :focus, :active) {
+        background: $--accent-color;
+        color: $--primary;
+      }
+      &:checked {
+        background: $--accent-color;
+        color: $--primary;
+      }
+      &::checkmark {
+        display: none;
+      }
+      &:first-child {
+        border: 0;
+      }
+				}
+
+			}
+			// .select__wrap{
+			// 	position: relative;
+			// 	&:after{
+			// 		content: '';
+			// 		width: 17.5px;
+			// 		height: 8.5px;
+			// 		background: url('../images/arrow-select.svg') center center / cover no-repeat;
+			// 		position: absolute;
+			// 		top: 50%;
+			// 		transform: translateY(-50%);
+			// 		right: 50px;
+			// 	}
+			// }
+			.input__wrap{
+				position: relative;
+				& input{
+					padding-left: 103px;
+				}
+				&:after{
+					content: '';
+					width: 31px;
+					height: 22px;
+					position: absolute;
+					top: 50%;
+					left: 50px;
+					transform: translateY(-50%);
+					background:url('../images/contact-img2.svg') center center / cover no-repeat  ;
+				}
+			}
+			input[type="submit"]{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				padding: 20px;
+				color: $--primary;
+				font-family: 'NauryzRedKeds';
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				letter-spacing: 1.2px;
+				text-transform: uppercase;
+				max-width: 234px;
+				width: 100%;
+				background-color: $--white;
+				margin: 0 auto;
+				transition: .3s linear;
+				border: 3px solid transparent;
+				&:hover{
+					border-color:$--accent-color;
+					background-color: transparent;
+					color: $--accent-color;
+				}
+				@media screen and (min-width:768px) {
+					padding: 32px;
+					max-width: 375px;
+					font-size: 20px;
+					letter-spacing: 2px;
+					padding: 26px 83px;
+				}
+				@media screen and (max-width:429.9px) {
+					padding: 10px;
+				}
+				
+			}
+			.submit__wrap{
+				position: relative;
+				padding: 12px 12px 0 12px;
+				background-color: $--primary;
+				margin: 0 auto;
+				max-width: fit-content;
+				border-radius: 50px 50px 0 0;
+				max-width: 250px;
+				margin: 0 auto;
+				@media screen and (min-width:768px) {
+						padding:20px 20px 0 20px;
+						border-radius: 80px 80px 0 0;
+						max-width: 375px;
+				}
+					@media screen and (max-width:429.9px) {
+					border-radius: 30px 30px 0 0;
+				}
+				&:before,
+				&:after{
+				content: '';
+				position: absolute;
+				width: 20px;
+				height: 50%;
+				bottom: -3px;				
+				z-index: 1;
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				@media  screen and (min-width:430px)  and (max-width:767.9px){
+					width: 24px;
+				}
+				@media  screen and (min-width:768px){
+					width: 40px;
+				}
+				}
+				&:before{		
+				left: 2px;	
+				transform: translateX(-100%);		
+				background-image: url('../images/Subtract-test.svg');				
+				}
+				&::after{
+				right: 2px;				
+				transform: translateX(100%);
+				background-image: url('../images/Subtract-test-right.svg');
+				
+			}
+			}
+			
+		}
+	}
+	
+}
+
+
+@keyframes rotateHue {
+  0% {
+    --hue: 180deg;
+  }
+  25% {
+    --hue: 360deg;
+  }
+  100% {
+    --hue: 180deg;
+  }
+}
+.contacts__form form .wpcf7-not-valid {
+	border: 1px solid red;
+}
+.wpcf7-not-valid-tip,
+.wpcf7-response-output,
+.spinner {
+	display: none;
+}

@@ -1,0 +1,112 @@
+.main{
+	padding: 64px 0 0 0;
+	border-radius: 0 0 32px 32px;
+	position: relative;
+	color: $--main-white;
+	margin-top: -16px;
+	margin-bottom: 40px;
+	@media screen and (min-width:1240px) {
+		padding-top: 32px;
+		
+	}
+	@media screen and (min-width:768px) {
+		margin-bottom: 32px;
+	}
+	&:before{
+		content: '';
+		width:100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right:0;
+		border-radius: 0 0 32px 32px;
+		background: linear-gradient(0deg, rgba(36, 35, 35, 0.70) 0%, rgba(36, 35, 35, 0.70) 100%);
+	z-index: 1;
+	}
+	img{
+		position: absolute;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		border-radius: 0 0 32px 32px;
+		z-index: 0;
+		object-fit: cover;
+		filter: grayscale(1);
+	}
+	&__container{
+		position: relative;
+		z-index: 1;
+		display: flex;
+		align-items: center;
+		gap: 40px;
+		flex-direction: column;
+		@media screen and (min-width:1240px) {
+			gap: 150px;
+			flex-direction: row;
+		}
+		@media screen and (min-width:768px) and (max-width:1239.9px) {
+			gap: 64px;
+		}
+	}
+	&__content{
+
+		@media screen and (min-width:1240px) {
+			width: 46%;
+		}
+		@media screen and (max-width:1239.9px) {
+			text-align: center;
+		}
+		h1{
+			@include titleH1;
+			margin-bottom: 14px;
+		}
+		p{
+			@include p1;
+			margin-bottom: 20px;
+			&:nth-last-of-type(1){
+				@media screen and (min-width:768px) {
+				margin-bottom: 64px;
+			}
+			}
+		}
+	}
+	&__btns{
+		@media screen and (max-width:1239.9px) {
+			justify-content: center;
+		}
+			.btn-secondary{
+			&:after{
+				width: 15px;
+				height: 15px;
+				background-image: url(../images/secondary-phone.svg);
+			}
+			&:hover{
+				&:after{
+					transform: none;
+					background-image: url(../images/phone-3.svg);
+				}
+			}
+		}
+	}
+	&__form{
+		background-color: $--primary;
+		border-radius: 24px 24px 0 0;
+		padding: 30px 20px;
+		max-width: 550px;
+		margin: 0 auto;
+		@media screen and (min-width:1240px) {
+			width: 42%;
+		}
+		@media screen and (min-width:768px) {
+			padding: 32px;
+		}
+		.form-group:before{
+			top: 39px;
+		}
+	}
+
+}

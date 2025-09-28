@@ -1,0 +1,141 @@
+.services{
+	&__container{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+		@media screen and (min-width:1024px) {
+			gap: 50px;
+		}
+	}
+	&__title{
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		max-width: 663px;
+		width: 100%;
+		color: $--light-grey;
+		h2{
+			text-align: left;
+		}
+		p{
+			max-width: 368px;
+			width: 100%;
+			strong{
+				font-weight: 700;
+				color: $--white;
+			}
+		}
+	}
+	& .btn{
+		max-width: 234px;
+		width: 100%;
+		max-height: fit-content;
+		@media screen and (min-width:1024px) {
+			margin-left: auto;
+		}
+		@media screen and (min-width:768px) {
+			max-width: 375px;
+		}
+		@media screen and (max-width:1023.9px) {
+			order: 3;
+			margin: 0 auto;
+
+		}
+	}
+
+	&__item{
+
+		&:hover{
+		.services__item__link svg path:nth-of-type(1) {
+  	animation: arrowIn 0.8s ease-in-out  1 normal both;
+		}
+		.services__item__link svg path:nth-of-type(2) {
+			animation: arrowOut 0.8s ease-in-out 0.2s 1 normal both;
+		}
+		}
+
+	&__content{
+
+	&__info{
+		margin-bottom: 26px;
+			@media screen and (min-width:768px) {
+				margin-bottom: 40px;
+			}
+		span{
+			margin-bottom: 20px;
+		}
+
+		li{
+			text-transform: uppercase;
+				@media screen and (min-width:768px) {
+				font-size: 18px;
+				letter-spacing: 1.8px;
+			}
+		}
+		&__price{
+			margin-top: auto;
+		}
+	}
+	}
+	&__img{
+		position: relative;
+		z-index: 2;
+	}
+	&__img{
+		position: absolute;
+		bottom: 0;
+		left: 36%;
+		right: inherit;
+		max-width: 142px;
+		max-height: 136px;
+		width: 100%;
+		height: 100%;
+		transform: translateX(-25%);
+		img{
+			width: 100%;
+			height: 100%;
+		}
+		@media screen and (min-width:568px) {
+			max-width: 288px;
+			max-height: 256px;
+			left: 36%;
+
+		}
+	}
+	&__link{
+
+		svg{
+			width: 100%;
+			height: 100%;
+		 path {
+   transition:transform 1s ease-in-out;
+    &:nth-of-type(1) {
+    transform: translate(0%, 0%);
+
+    }
+    &:nth-of-type(2) {
+      transform: translate(-45%, -45%); 
+    }
+  }
+		}
+	}
+	}
+}
+
+@keyframes arrowOut {
+	0% {
+    transform: translate(-45%, -45%);
+}
+
+100% {
+    transform: translate(0, 0);
+}
+}
+@keyframes arrowIn {
+0% {
+    transform: translate(0px, 0px);
+}
+100% {
+    transform: translate(45%, 45%);
+}
+}

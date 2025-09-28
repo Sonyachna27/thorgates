@@ -1,0 +1,30 @@
+.partners{
+	&__items{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+		@media screen and (min-width:768px) {
+			gap: 23px;
+		}
+	}
+	&__item{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 12px;
+		background: $--light-grey;
+		padding: 25px;
+		width: 100%;
+		min-height: 129px;
+		@media screen and (min-width:1240px) {
+			width: calc((100% / 5) - 23px);
+		}
+		@media screen and (min-width:768px) and (max-width:1239.9px) {
+			width: calc((100% / 2) - 23px);
+		}
+		img{
+			width: fit-content;
+			height: fit-content;
+		}
+	}
+}

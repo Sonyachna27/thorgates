@@ -1,0 +1,70 @@
+.company{
+	&__images{
+		display: flex;
+		gap: 4px;
+		align-items: stretch;
+		margin-bottom: 30px;
+		@media screen and (min-width:768px)  and (max-width:1239.9px){
+			gap: 15px;
+		}
+		@media screen and (min-width:1240px){
+			gap: 20px;
+		}
+		@media screen and (min-width:768px){
+			margin-bottom: 50px;
+		}
+		img{
+			object-fit: cover;
+			border-radius: 5.6px;
+			max-height: 200px;
+			height: auto;
+			@media screen and (min-width:768px) {
+				border-radius: 14px;
+				max-height: 435px;
+				
+			}
+			&:nth-of-type(1){
+				width: 57%;
+			}
+			&:nth-of-type(2){
+				width: 43%;
+			}
+		}
+	}
+	&__content{
+		max-width: 1120px;
+		margin: 0 auto;
+		padding: 30px 0;
+		border-top: 1px solid transparent;
+		border-bottom: 1px solid transparent;
+		border-image: linear-gradient(90deg, #F1F0ED 0%, #333 59.13%, #F1F0ED 100%);;
+		border-image-slice: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		@media screen and (min-width:768px) {
+			padding: 64px 0;
+		}
+		@media screen and (min-width:1240px) {
+			flex-direction: row;
+		}
+		h2{
+			@include titleH2;
+			text-transform: capitalize;
+			@media screen and (min-width:1240px) {
+				width: 42%;
+			}
+		}
+		&__info{
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+			p, ul,ol{
+				@include p2-1;
+			}
+			@media screen and (min-width:1240px) {
+				width: 58%;
+			}
+		}
+	}
+}

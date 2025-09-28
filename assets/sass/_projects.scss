@@ -1,0 +1,138 @@
+.projects{
+	&__title{
+		
+		max-width: 500px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+		@media screen and (min-width:768px) {
+			margin-bottom: 50px;
+		}
+		.projects-design &{
+			max-width: 650px;
+		}
+		a{
+			color: $--grey-3;
+			font-weight: 700;
+		}
+	}
+	&__items{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+		margin-bottom: 30px;
+		
+		@media screen and (min-width:1240px) {
+			grid-template-columns: repeat(4, 1fr);
+			gap: 12px;
+		}
+		@media screen and (min-width:1024px) and (max-width:1239.9px) {
+			gap: 20px;
+		}
+		
+	}
+	&__item{
+		transition: .3s linear;
+		&.hidden{
+			display: none;
+		}
+		display: block;
+		position: relative;
+		.simple{
+			position: absolute;
+			top: 9px;
+			left: 9px;
+			@media screen and (min-width:768px) {
+				top: 20px;
+			left: 20px;
+			}
+		}
+		img{
+			border-radius: 5px;
+			max-width: 100%;
+			width: 100%;
+			min-height: 210px;
+			max-height: 210px;
+			object-fit: cover;
+			@media screen and (min-width:768px) {
+			border-radius: 10px;
+			max-height: 360px;
+			min-height: 360px;
+			height: 100%;
+		}
+			
+		}
+	}
+	.btn{
+			margin: 0 auto;
+			@media screen and (max-width:768px) {
+				max-width: 100%;
+				width: 100%;
+			}
+		}
+}
+.gallery{
+	&__title{
+		max-width: 1000px;
+		margin: 0 auto;
+			margin-bottom: 30px;
+			
+		@media screen and (min-width:768px) {
+			margin-bottom: 50px;
+		}
+	}
+	&__tabs{
+		display: flex;
+		align-items: center;
+		
+		gap: 10px;
+		overflow: hidden;
+		overflow-x: auto;
+		margin-bottom: 30px;
+			margin-right: -20px;
+		@media screen and (min-width:768px) {
+			margin-bottom: 50px;
+		}
+		@media screen and (min-width:1024px) {
+			justify-content: center;
+			margin-right: 0px;
+		}
+		
+		button{
+			border-radius: 10px;
+			padding: 16px 24px;
+			background-color: $--secondary-200;
+			color: $--primary;
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			font-family: "Titillium Web", sans-serif;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 140%; 
+			text-transform: uppercase;
+			min-width: fit-content;
+			&.active{
+				background-color: $--primary;
+				color: $--secondary-200;
+				span{
+				background-color: $--secondary-200;
+			color: $--primary;
+			
+				}
+			}
+			span{
+				padding: 2px 6px;
+				border-radius: 4px;
+				font-family: "Titillium Web", sans-serif;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 140%;
+				background-color: $--primary;
+				color: $--secondary-200;
+			
+			}
+		}
+	}
+}
