@@ -1,6 +1,11 @@
 .news{
 	position: relative;
-
+	&.without-bg{
+		&:before,
+		&:after{
+			content: none;
+		}
+	}
 		&:before,
 		&:after{
 			content: '';
