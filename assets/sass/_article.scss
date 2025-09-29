@@ -1,0 +1,135 @@
+.article{
+	&__img{
+		border-radius: 20px;
+		max-height: 282px;
+		object-fit: cover;
+		width: 100%;
+		max-width: 100%;
+		@media screen and (min-width:768px) {
+			border-radius: 24px;
+			max-height: 500px;
+		}
+	}
+	&__content{
+padding: 32px 16px;
+	border-radius: 24px;
+	background-color: $--light-grey;
+	@media screen and (min-width:768px) {
+		padding: 64px;
+	}
+	}
+	.simple{
+		margin-bottom: 20px;
+			@media screen and (min-width:768px) {
+				margin-bottom: 32px;
+			}
+
+	}
+	img{
+		border-radius: 20px;
+		margin: 0 auto;
+		aspect-ratio: 6 / 5;
+		@media screen and (min-width:768px) {
+			border-radius: 24px;
+			aspect-ratio: 5 / 3;
+		}
+	}
+	h2,
+	h3,
+	h4,h5,p,ol,ul,img{
+			margin-bottom: 20px;
+			@media screen and (min-width:768px) {
+				margin-bottom: 32px;
+			}
+		
+	}
+	h2,
+	h3,
+	h4,h5{
+		color: $--primary;
+		text-transform: capitalize;
+	}
+	p,ul,ol{
+		color: $--dark-grey;
+	}
+	p{
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 170%;
+		@media screen and (min-width:768px) {
+			font-size: 18px;
+		}
+	}
+
+	h2{
+		@include titleH2;
+	}
+	h3{
+		@include titleH3;
+
+	}
+	h4{
+		@include titleH4;
+	}
+	h5{
+		@include titleH5;
+	}
+	ul{
+		@include list;
+	}
+	ol{
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 170%;
+	}
+	a{
+		color: $--secondary;
+		text-decoration: underline;
+		font-weight: 700;
+	}
+	blockquote{
+		padding: 20px;
+		background-color: rgba(255, 255, 255, 0.50);
+		border-left: 4px solid $--secondary;
+		
+		color: $--dark-grey;
+		margin-bottom: 20px;
+		@media screen and (min-width:768px) {
+			margin-bottom: 32px;
+		}
+	
+		p{
+			font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%; /* 27px */
+		letter-spacing: 0.36px;
+		margin-bottom: 18px;
+		@media screen and (min-width:768px) {
+			font-size: 20px;
+			letter-spacing: 0.4px;
+		}
+		}
+		div{
+			display: flex;
+			flex-direction: column;
+			gap: 4px;
+			span{
+				&:nth-of-type(1){
+					font-size: 20px;
+					font-style: normal;
+					font-weight: 800;
+					line-height: 160%; 
+				}
+				&:nth-last-of-type(1){
+					font-size: 14px;
+						font-style: normal;
+						font-weight: 500;
+						line-height: 160%;
+				}
+			}
+		}
+		}
+}

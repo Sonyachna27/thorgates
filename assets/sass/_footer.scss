@@ -10,6 +10,9 @@
 		@media screen and (min-width:1240px) {
 			width: 1px;
 		}
+		@media screen and (min-width:768px) and (max-width:1239.9px) {
+			height: 1px;
+		}
 		@media screen and (max-width:767.9px) {
 			display: none;
 		}
@@ -26,6 +29,9 @@
 	padding: 60px 0;
 	@media screen and (min-width:768px) {
 		padding: 100px 0;
+	}
+	@media screen and (min-width:1240px) {
+		gap: 150px;
 	}
 }
 &__logo{
@@ -48,7 +54,8 @@
 		text-align: center;
 	}
 	div:not([class]){
-		padding: 20px;
+		padding: 20px 0;
+		text-align: center;
 		border-top: 1px solid #BDBDBD;
 		border-bottom: 1px solid #BDBDBD;
 		margin-bottom: 32px;
@@ -68,9 +75,8 @@
 &__middle{
 	width: 100%;
 	@media  screen and (min-width:1240px) {
-		width: 58%;
+		width: 49%;
 	}
-
 }
 &__form{
 	display: flex;

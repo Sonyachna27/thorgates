@@ -80,6 +80,29 @@ color: $--main-white;
 	letter-spacing: 0.16px;
 }
 }
+@mixin list{
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 170%;
+li{
+	padding-left: 30px;
+	position: relative;
+	&::before{
+		content: '';
+		width: 16px;
+		height: 16px;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		background: url(../images/article-list.svg) center center / cover no-repeat;
+	}
+}
+}
 @mixin p1{
 font-size: 16px;
 font-style: normal;
