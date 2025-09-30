@@ -410,6 +410,9 @@ form{
 		color: #F00;
 	}
 	}
+	textarea{
+			min-height: 120px;
+		}
 	input,
 	textarea{
 		width: 100%;
@@ -433,6 +436,7 @@ form{
 		color: $--primary;
 		opacity: .3;
 		}
+		
 	}
 .popup &{
 display: flex;
@@ -470,6 +474,7 @@ textarea{
 	}
 	&.message-group{
 		width: 100%;
+		margin-bottom: 14px;
 		&:before{
 			background-image: url(../images/message.svg);
 		}
@@ -631,7 +636,8 @@ li{
 	}
 }
 ul.popup__list,
-ul.main__list{
+ul.main__list,
+.contact__promo ul.dark__promo__list{
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
@@ -643,6 +649,9 @@ ul.main__list{
 		padding: 18px 0;
 			margin-bottom:18px;
 	}
+}
+.contact__promo ul.dark__promo__list{
+	margin-bottom: 0;
 }
 .popup__title,
 .main__title{	
