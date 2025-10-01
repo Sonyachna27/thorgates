@@ -1,7 +1,9 @@
 .area{
 	border-radius: 0 0 32px 32px ;
 	&__title{
+		margin: 0 auto;
 		margin-bottom: 30px;
+		max-width: 882px;
 		@media screen and (min-width:768px) {
 		margin-bottom: 50px;	
 		}
@@ -29,7 +31,6 @@
 			}
 			@media screen and (min-width:1240px) {
 				width: 45%;
-
 			}
 			@media screen and (min-width:768px) and (max-width:1239.9px) {
 				aspect-ratio: 16 / 9;
@@ -61,28 +62,26 @@
 					display: grid;
 					grid-template-columns: repeat(2, 1fr);
 				}
-					/* Для Chrome, Edge, Safari */
 					&::-webkit-scrollbar {
-						width: 18px; /* ширина скролбара */
+						width: 18px; 
 					}
 
 				&::-webkit-scrollbar-track {
-					background: #F6F6F6;     /* колір доріжки */
-					border-radius: 500px;   /* закруглення */
+					background: #F6F6F6;     
+					border-radius: 500px;  
 				}
 
 				&::-webkit-scrollbar-thumb {
-					background: rgba(31, 32, 40, 0.40);   /* колір бігунка */
-					border-radius: 500px;   /* закруглення бігунка */
-					border: 3px solid #fff; /* "відступи", щоб був всередині */
+					background: rgba(31, 32, 40, 0.40);  
+					border-radius: 500px;  
+					border: 3px solid #fff; 
 				}
 
 				&::-webkit-scrollbar-thumb:hover {
-					background: #888; /* колір при наведенні */
+					background: #888; 
 				}
 				li{
 					padding: 12px 0;
-					border-bottom: 16px;
 					border-bottom: 1px solid rgba(255, 255, 255, 0.30);
 					&:not(:nth-of-type(1)){
 						padding-top: 12px;

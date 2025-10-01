@@ -6,6 +6,12 @@
 			content: none;
 		}
 	}
+	&.without-bg{
+		&:before,
+		&:after{
+			content: none;
+		}
+	}
 		&:before,
 		&:after{
 			content: '';

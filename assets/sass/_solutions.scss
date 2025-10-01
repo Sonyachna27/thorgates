@@ -25,7 +25,7 @@
 		}
 	}
 	&__item{
-		aspect-ratio: 315 / 411;
+		// aspect-ratio: 315 / 411;
 		position: relative;
 		border-radius: 10px;
 		display: flex;
@@ -42,10 +42,10 @@
 			max-height: 410px;
 		}
 		@media screen and (min-width:768px) and (max-width:1239.9px) {
-			width: calc(50% - 20px);
+			width: calc(50% - 10px);
 		}
 		@media screen and (min-width:1240px) {
-			width: calc((100% / 4) - 20px);
+			width: calc((100% / 4) - 10px);
 		}
 			&:nth-of-type(even){
 				.without-mt &{
@@ -86,11 +86,12 @@
 		.btn{
 			padding: 9px 19px;
 			font-size: 12px;
+			gap: 16px;
 		}
 		&__content{
 			position: relative;
 			z-index: 2;
-			margin-top: auto;
+			padding-top: 260px;
 			display: flex;
 			flex-direction: column;
 			color: $--main-white;		

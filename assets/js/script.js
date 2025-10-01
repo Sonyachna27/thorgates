@@ -227,7 +227,7 @@ const completeSliderInit = () =>{
     },
     1240: {
       slidesPerView: 3,
-      spaceBetween: 15,
+      spaceBetween: 20,
     }
 	},
 });

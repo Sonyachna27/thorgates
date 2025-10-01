@@ -22,7 +22,7 @@
 	&__item{
 		display: inline-flex;
 		flex-direction: column;
-		padding: 10px;
+		padding: 10px 10px 20px 10px;
 		background-color: $--dark-grey;
 		border-radius: 14px;
 		height: 100%;
@@ -34,12 +34,15 @@
 		}
 		img{
 			border-radius:  10px;
-			aspect-ratio: 1;
-			max-height: 270px;
 			margin-bottom: 20px;
 			@media screen and (min-width:768px) {
 				aspect-ratio: 370 / 292;
 				max-width: 370px;
+				max-height: 292px;
+			}
+			@media screen and (max-width:767.9px) {
+				aspect-ratio: 1;
+				max-height: 270px;
 			}
 		}
 		&__info{
@@ -47,10 +50,13 @@
 			flex-direction: column;
 			div{
 				@include titleH5;
+				margin-bottom: 4px;
+				text-transform: uppercase;
 			}
 			span:not([class]){
 				@include p2-1;
 				margin-bottom: 24px;
+				color: rgba(241, 240, 237, 0.85);
 			}
 		}
 	}

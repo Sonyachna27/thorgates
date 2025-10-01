@@ -10,8 +10,7 @@
 			top: 0;
 			bottom: 0;
 			left: 0;
-			right: 0;
-		
+			right: 0;		
 		}
 		@media screen and (max-width:1239.9px) {
 			aspect-ratio: 1024 / 785;
@@ -73,8 +72,7 @@
 		}
 		&__item{
 			display: flex;
-			gap: 20px;
-			
+			gap: 20px;			
 			@media screen and (min-width:1024px) and  (max-width:1239.9px) {
 				width: calc((100% / 3 ) - 48px);
 			}
@@ -101,7 +99,11 @@
 				gap: 10px;
 				flex-direction: column;
 				h3{
-					@include titleH5;
+					font-size: 20px;
+					font-style: normal;
+					font-weight: 600;
+					line-height: 120%; /* 24px */
+					letter-spacing: 0.2px;
 				}
 				p{
 					font-size: 12px;

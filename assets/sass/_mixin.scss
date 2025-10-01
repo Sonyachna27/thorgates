@@ -9,8 +9,8 @@ text-transform: uppercase;
 		font-size: 50px;
 	}
 
-	strong{		
-		font-weight: 700;
+	span{		
+		font-weight: 400;
 	}
 }
 @mixin titleH2{
@@ -121,17 +121,13 @@ letter-spacing: 0.36px;
 	line-height: 140%;
 }
 @mixin p2-1{
-	font-size: 14px;
-			font-style: normal;
-			font-weight: 500;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 500;
 			line-height: 160%;
 	@media screen and (min-width:768px) {
 		font-size: 16px;
-		font-style: normal;
-		font-weight: 400;
-		line-height: 140%;
-	}
-	
+	}	
 }
 @mixin p3{
 	font-size: 14px;
