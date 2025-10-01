@@ -92,6 +92,7 @@
   gap: 9px;
 	flex-wrap: wrap;
 	grid-template-rows: 117px repeat(4, 46px)  117px;
+	max-height: 100%;
   @media screen and (min-width: 1240px) {
     width: 43%;	
 		grid-template-rows: 2.5fr repeat(4, 1fr) 2.5fr;
