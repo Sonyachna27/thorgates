@@ -29,7 +29,7 @@
 		}
 		h2{
 			@include titleH2;
-			width: min-content;
+			text-wrap-style: balance;
 		}
 		p{
 			@include p3;

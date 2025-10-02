@@ -216,6 +216,16 @@
 	}
 	a{
 		display: flex;
+		&:hover{
+			span{
+				color: $--secondary;
+			}
+			svg{
+				path{
+					fill: $--secondary;
+				}
+			}
+		}
 		div{
 			display: flex;
 			flex-direction: column;
@@ -225,12 +235,16 @@
 			max-width: 32px;
 			max-height: 32px;
 			min-width: 32px;
-			min-height: 32px;			
+			min-height: 32px;
+			path{
+				transition:.3s linear;
+			}			
 		}
 		span{
 			color: $--main-white;
 			line-height: 120%; 
 			font-style: normal;
+			transition: .3s linear;
 				&:nth-of-type(1){
 					font-size: 16px;
 					font-weight: 500;					

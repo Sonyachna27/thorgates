@@ -7,16 +7,16 @@
 		width: max-content;
 		align-items: center;
 		transition: .3s linear;
-		animation: marqueeLine var(--_animation-duration, 60s) var(--_animation-direction, normal) linear infinite;
+		animation: marqueeLine var(--_animation-duration, 40s) var(--_animation-direction, normal) linear infinite;
 		gap: 10px;
 			@media screen and (min-width:768px) {
 				gap: 15px;
-				animation: marqueeLineMob var(--_animation-duration, 80s) var(--_animation-direction, normal) linear infinite;
+				animation: marqueeLineMob var(--_animation-duration, 40s) var(--_animation-direction, normal) linear infinite;
 			}
 		&:hover{
 				animation-play-state: paused;
 			}
-	}
+		}
 	a{
 		display: inline-flex;
 		align-items: center;
